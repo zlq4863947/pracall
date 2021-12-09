@@ -1,0 +1,44 @@
+{
+  "name": "pracall",
+  "version": "0.1.0",
+  "description": "a simple script for generating vertical grid paper for practicing calligraphy",
+  "author": "zlq4863947",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "format": "yarn format:ts",
+    "format:ts": "yarn format:ts:import && prettier --config .prettierrc --write 'src/**/*.ts'",
+    "format:ts:import": "import-sort --write 'src/**/*.ts'",
+    "jest": "jest -c jest.config.js",
+    "lint": "yarn lint:ts",
+    "lint:ts": "tslint -p tsconfig.json -c tslint.json",
+    "test": "yarn jest --runInBand",
+    "tsc:app": "tsc -p tsconfig.app.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zlq4863947/pracall.git"
+  },
+  "dependencies": {
+    "sharp": "^0.29.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/sharp": "^0.29.4",
+    "import-sort": "^6.0.0",
+    "import-sort-cli": "^6.0.0",
+    "import-sort-parser-typescript": "^6.0.0",
+    "import-sort-style-module-alias": "^1.0.4",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.6.3",
+    "vrsource-tslint-rules": "^6.0.0",
+    "yarn": "^1.19.0"
+  }
+}

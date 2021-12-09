@@ -1,0 +1,63 @@
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+.idea
+.npmrc
+
+# IDE - VSCode
+.vscode
+.history
+
+# Node Files #
+/node_modules
+/bower_components
+npm-debug.log
+.node-version
+
+# Typing #
+/src/typings/tsd/
+/typings/
+/tsd_typings/
+
+# Dist #
+/dist/
+/dist*/
+/__build__/**
+.webpack.json
+/src/assets/bower_components/
+
+# e2e typescript compiled result #
+e2e/**/*.js
+e2e/**/*.js.map
+
+# Coverage #
+/coverage/
+
+# Deploy #
+/output/
+/compiled/
+.awcache/
+/src/app/**/*.css
+/src/plugins/**/*.css
+ts-node
+/**/*.ngfactory.ts
+/**/*.css.ts
+/**/*.css.shim.ts
+/dll/
+/tmp
+
+# Config #
+/config/env/vars.local.js
+/config/env/vars.prod.js
+/config/env/vars.dev.js
+/config/env/vars.staging.js
+
+# e2e Config #
+.env
+
+# e2e report files #
+/screenshots/*
+!/screenshots/.gitkeep
+reports/*
+!reports/.gitkeep
